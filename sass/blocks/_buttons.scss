@@ -1,0 +1,104 @@
+.header__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* Tablet media */
+    @media (max-width: 1199px) {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    /* ..... // Tablet Media ....*/
+    /* Mobile media */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+    }
+    /* ..... // Mobile Media ....*/
+}
+
+.header__button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    justify-content: center;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        background-color: #00C470;
+        .search-group {
+            stroke: #fff;
+        }
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.button {
+    height: 60px;
+    background: #00C470;
+    border-radius: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.package__button .button {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.20);
+    &:hover {
+        background: rgb(0, 0, 0);
+    }
+}
+
+.package--standart .button {
+    background: #FFFFFF;
+    color: #2E2E2E;
+    &:hover {
+        background: #00C470;
+    }
+}
+
+.section-cta--button {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.slider__arrow--right,
+.slider__arrow--left {
+    .slider-button {
+        stroke: #00C470;
+    }
+    &:hover,
+    &.active {
+        background-color: #00C470;
+        .slider-button {
+            stroke: #fff;
+        }
+    }
+}
+
+// #00C470
+//stroke="#00C470"
+//stroke="#00C470"
+// slider__arrow slider__arrow--right

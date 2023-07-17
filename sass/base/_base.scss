@@ -1,0 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+input, textarea, button{
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+}
+button{
+    border: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

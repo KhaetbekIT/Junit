@@ -1,0 +1,115 @@
+.header {
+    position: relative;
+    z-index: 99;
+    // height: 870px;
+    background-image: url("./../img/header/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.header__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    /* Tablet media */
+    @media (max-width: 1199px) {
+        padding-bottom: 51px;
+    }
+    /* ..... // Tablet Media ....*/
+    /* Mobile media */
+    @media (max-width: 899px) {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    /* ..... // Mobile Media ....*/
+    /* Mobile XS media */
+    @media (max-width: 599px) {
+        padding-bottom: 40px;
+    }
+    /* ..... // XS Mobile Media ....*/
+}
+
+.header__content {
+    margin-bottom: 150px;
+    // padding-bottom: 35px;
+    text-align: center;
+    /* Tablet media */
+    @media (max-width: 1199px) {
+        margin-bottom: 130px;
+    }
+    /* ..... // Tablet Media ....*/
+    /* Mobile media */
+    @media (max-width: 899px) {
+        margin-bottom: 80px;
+    }
+    /* ..... // Mobile Media ....*/
+    /* Mobile XS media */
+    @media (max-width: 599px) {
+        margin-bottom: 50px;
+    }
+    /* ..... // XS Mobile Media ....*/
+}
+
+.header__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    color: #FFFFFF;
+    /* Tablet media */
+    @media (max-width: 1199px) {
+        margin-bottom: 35px;
+        font-size: 84px;
+    }
+    /* ..... // Tablet Media ....*/
+    /* Mobile media */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+        font-size: 70px;
+    }
+    /* ..... // Mobile Media ....*/
+}
+
+.header__desc {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    width: 730px;
+    color: #FFFFFF;
+    /* Tablet media */
+    @media (max-width: 1199px) {
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
+    /* ..... // Tablet Media ....*/
+    /* Mobile media */
+    @media (max-width: 899px) {
+        width: 430px;
+        font-size: 16px;
+    }
+    /* ..... // Mobile Media ....*/
+    /* Mobile XS media */
+    @media (max-width: 599px) {
+        width: 100%;
+        margin-bottom: 33px;
+    }
+    /* ..... // XS Mobile Media ....*/
+}

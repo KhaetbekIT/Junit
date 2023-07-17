@@ -1,0 +1,21 @@
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #15D784;
+    /* Mobile media */
+    @media (max-width: 899px) {
+        font-size: 14px;
+    }
+    /* ..... // Mobile Media ....*/
+}
+
+.section-package__title.title {
+    color: #FFFFFF;
+}
+
+.nav__title.title {
+    font-size: 18px;
+}

@@ -1,0 +1,31 @@
+.subtitle{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+ 
+    color: #2E2E2E;
+
+    /* Tablet media */
+    @media (max-width: 1199px){
+        font-size: 38px;
+    }
+    /* ..... // Tablet Media ....*/
+
+    /* Mobile media */
+    @media (max-width: 899px){
+        font-size: 30px;
+    }
+    /* ..... // Mobile Media ....*/
+
+    /* Mobile XS media */
+    @media (max-width: 599px){
+        font-size: 26px;
+    }
+    /* ..... // XS Mobile Media ....*/
+}
+
+.section-package__subtitle.subtitle{
+
+    color: #FFFFFF;
+
+}

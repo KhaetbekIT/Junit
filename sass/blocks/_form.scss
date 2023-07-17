@@ -1,0 +1,117 @@
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__form {
+    display: flex;
+    justify-content: space-between;
+    width: 766px;
+    margin-right: auto;
+    margin-left: auto;
+    /* Mobile media */
+    @media (max-width: 899px) {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        &>*+* {
+            margin-top: 20px;
+        }
+    }
+    /* ..... // Mobile Media ....*/
+    /* Mobile XS media */
+    @media (max-width: 599px) {
+        width: 100%;
+    }
+    /* ..... // XS Mobile Media ....*/
+}
+
+.input {
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-right: 40px;
+    border: none;
+    transition: 0.5s;
+    &:focus {
+        outline: none;
+        background-color: #000;
+    }
+    &:hover {
+        background-color: #000;
+    }
+    &::placeholder {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #FFFFFF;
+    }
+    /* Mobile media */
+    @media (max-width: 899px) {
+        width: 100%;
+        padding-left: 46px;
+    }
+    /* ..... // Mobile Media ....*/
+    // Mobile XS Media
+    @media (max-width: 599px) {
+        padding-left: 36px;
+    }
+}
+
+.form__search.input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+    &::placeholder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(46, 46, 46, 0.5);
+    }
+    transition: width 0.3s ease-in;
+    -webkit-transition: width 0.3s ease-in;
+    -moz-transition: width 0.3s ease-in;
+    -ms-transition: width 0.3s ease-in;
+    -o-transition: width 0.3s ease-in;
+}
+
+.search-group {
+    stroke: #000;
+}
+
+.form.active {
+    .header-search {
+        background-color: #00C470;
+    }
+    .search-group {
+        stroke: #fff;
+    }
+    .form__search.input {
+        width: 340px;
+        padding-left: 30px;
+        padding-right: 70px;
+        @media (max-width: 599px) {
+            width: 220px;
+            padding-left: 10px;
+            padding-right: 65px;
+            &::placeholder {
+                font-size: 10px;
+            }
+        }
+    }
+}
